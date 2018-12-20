@@ -1,0 +1,422 @@
+/************
+//--------------------------------
+// GENERAL
+//-------------------------------
+************/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+h2 {
+    font-size: 2em;
+    line-height: 1em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 15px 0;
+    text-align: left;
+    font-weight: 300;
+}
+h4 {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 15px 0;
+    text-align: left;
+    font-weight: 300;
+}
+
+p {
+    margin: 0 0 1.5em 0;
+}
+
+
+
+/************
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+    background: black;
+    color: white;
+    height: 80px;
+
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+    #main-header a {
+        color: white;
+    }
+
+
+/*
+ * Logo
+ */
+#logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+    #logo-header:hover {
+        color: #966D00;
+    }
+
+    #logo-header .site-name {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
+    #logo-header .site-desc {
+        display: block;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #999;
+    }
+
+
+/*
+ * Navegación
+ */
+nav {
+    float: right;
+}
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+    }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 0 10px;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    background: #041752;
+                }
+
+
+
+
+/************
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+    display: grid;
+    background: white;
+    grid-template-columns:10px 1fr 10px 1fr 10px 1fr 1fr 10px;
+    grid-template-rows:10px 1fr 10px 1fr 10px auto 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+    #main-content header,
+    #main-content .content {
+        padding: 40px;
+    }
+
+    #main-content img {
+      max-width: 100%;
+    }
+    #main-content button{
+
+    }
+/*grid index*/
+    #index_Ilustracion{
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    #index_edicion{
+      grid-column-start: 4;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    #index_fotografia{
+      grid-column-start: 6;
+      grid-column-end: 8;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    #index_multi{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+/*Grid sobre mi*/
+    #about-img{
+      padding-top: 40px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    #about-Fa{
+      grid-column-start: 4;
+      grid-column-end: 8;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+
+/*Grid actividades*/
+    #act-Voly{
+      grid-column-start: 6;
+      grid-column-end: 8;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    #act-Text{
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+
+/*Grid Servicios*/
+    #serv_DL{
+      text-align: center;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    #serv_IL{
+      text-align: center;
+      grid-column-start: 4;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    #serv_DM{
+      text-align: center;
+      grid-column-start: 6;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+ /*Grid contacto*/
+   #contacto{
+     text-align: left;
+     grid-column-start: 2;
+     grid-column-end: 5;
+     grid-row-start: 2;
+     grid-row-end: 3;
+   }
+   #social{
+     grid-column-start: 5;
+     grid-column-end: 8;
+     grid-row-start: 2;
+     grid-row-end: 3;
+   }
+ /*Servicios*/
+
+
+#serv-dLogo{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#serv-dIlustracion{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#serv-dMulti{
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+#serv-dFoto{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#serv-dInfo{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#serv-dWeb{
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#precio{
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+
+/*dLogo*/
+#dLogo1{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#dLogo2{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#dLogo3{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#dLogo4{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#dLogo5{
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+/*Foto*/
+#foto1{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#foto2{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#foto3{
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#foto4{
+  padding-left: 10px;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#foto5{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#foto6{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#foto7{
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#foto8{
+  padding-left: 10px;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#foto9{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+#foto10{
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+#ilu5{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#ilu6{
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+    #main-footer p {
+        margin: 0;
+    }
+
+    #main-footer a {
+        color: white;
